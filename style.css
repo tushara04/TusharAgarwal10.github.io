@@ -1,33 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
-    font-family: Helvetica, sans-serif;
-    background-color: #fff;
-    color: #000;
+    background-color:#232323 ;
+    color: white;
+    font-family: "Open Sans";
+}
+
+.header {
+    background-color: #232323;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    position: sticky;
+    top: 0;    
+    z-index: 1000;
+    box-shadow: 0px 1px 5px white; 
+}
+
+.header h2 {
+    display: inline-block;
+    margin: 30px 10px 10px 0;
+}
+
+.header ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+    display: inline-block;
 }
-.container {
-    max-width: 800px;
-    padding: 20px;
+
+.header li {
+    display: inline-block;
+    margin-right: 10px;
 }
-h1 {
-    font-family: Helvetica;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-a {
-    color: #007bff;
+
+.header li a {
     text-decoration: none;
+    color: white; /* Set link color to white */
 }
-a:hover {
-    text-decoration: underline;
+
+/* Style for active link or hover effects */
+.header li a:hover {
+    color: #000;
+}
+
+.iframe_style {
+    border: none;
+    overflow: hidden;
+    width: 100%; /* Full width */
+}
+
+.sections{
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#about {
+    padding-bottom: 30px;
+}
+
+#projects {
+    padding-bottom: 30px;
+}
+
+#publicatons {
+    padding-bottom: 30px;
+}
+
+#blog {
+    padding-bottom: 30px;
 }

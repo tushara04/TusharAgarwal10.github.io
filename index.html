@@ -7,9 +7,47 @@
     <title>tusharagarwal.me</title>
 </head>
 <body>
-    <div class="container">
-        <h1>This is the best motherfucking website</h1>
-        <p>And you've reached it. Congratulations! Now go <a href="https://www.google.com">search for something useful</a>.</p>
-    </div>
+    <div class = "header">
+        <h1>Tushar Agarwal</h1>
+        <ul>
+            <li><a href = "#about" onclick="scrollToSection('#about')">About</a></li>
+            <li><a href = "#projects" onclick="scrollToSection('#projects')">Projects</a></li>
+            <li><a href = "#publications" onclick="scrollToSection('#publications')">Publications</a></li>
+            <li><a href = "#blog" onclick="scrollToSection('#blog')">Blog</a></li>
+            <li><a href = "#contact" onclick="scrollToSection('#contact')">Contact</a></li>
+        </ul>
+    </div> 
+     
+    <div class = "sections">
+        <section id = "about">
+            <h2>About</h2>
+            <iframe src="about.html" class = "iframe_style"></iframe>
+        </section>
+
+        <section id = "projects">
+            <h2>Projects</h2>
+            <iframe src="projects.html" class = "iframe_style"></iframe>
+        </section>
+
+        <section id = "publications">
+            <h2>Publications</h2>
+            <iframe src="publications.html" class = "iframe_style"></iframe>
+        </section>
+
+        <section id = "blog">
+            <h2>Blog</h2>
+            <iframe src="blog.html" class = "iframe_style"></iframe>
+        </section>
+
+        <section id = "contact">
+            <h2>Contact</h2>
+            <iframe src="contact.html" class = "iframe_style"></iframe>
+        </section>
+    
+
+    </div>  
+
+    <script src="script.js"></script>
 </body>
 </html>
+
