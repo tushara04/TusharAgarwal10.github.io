@@ -1,8 +1,21 @@
-/* Basic styles for your website */
-body {
-    font-family: Arial, sans-serif;
+/* Reset styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
@@ -11,33 +24,76 @@ header {
     padding: 10px 0;
 }
 
-nav ul {
+.nav-links {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
-nav ul li {
-    display: inline;
+.nav-links li {
     margin-right: 20px;
 }
 
-nav ul li a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-main {
-    padding: 20px;
+.nav-links a:hover {
+    color: #f0ad4e;
 }
 
-section {
+.logo {
+    font-size: 1.5rem;
+}
+
+.hero {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-footer {
-    background-color: #333;
+.btn {
+    display: inline-block;
+    background-color: #f0ad4e;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d9534f;
+}
+
+.about,
+.projects,
+.publications,
+.contact {
+    padding: 60px 0;
+}
+
+.about h2,
+.projects h2,
+.publications h2,
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
