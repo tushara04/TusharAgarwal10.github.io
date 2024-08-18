@@ -1,3 +1,7 @@
 [submodule "TusharAgarwal10.github.io"]
     path = TusharAgarwal10.github.io
+<<<<<<< HEAD
     url = https://github.com/tushara04/TusharAgarwal10.github.io.git
+=======
+    url = https://github.com/tushara04/TusharAgarwal10.github.io.git
+>>>>>>> fc4a5ada2d66f485112924e17bcdb7709813029a
