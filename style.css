@@ -1,74 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 body {
-    background-color:#232323 ;
-    color: white;
-    font-family: "Open Sans";
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-    background-color: #232323;
-    padding: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: center;
-    position: sticky;
-    top: 0;    
-    z-index: 1000;
-    box-shadow: 0px 1px 5px white; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    height: 2cm;
+    border-bottom: 2px solid black;
+    padding-left: 5cm;
 }
 
-.header h2 {
-    display: inline-block;
-    margin: 30px 10px 10px 0;
+.side {
+    position: absolute;
+    top: 2cm;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.3);
+    height: calc(100% - 2cm);
+    width: 2cm;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1cm;
 }
 
-.header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+.menu-item {
+    margin: 1cm;
+    font-weight: bold;
 }
 
-.header li {
-    display: inline-block;
-    margin-right: 10px;
+.content {
+    position: absolute;
+    top: 3cm;
+    left: 5cm;
 }
 
-.header li a {
-    text-decoration: none;
-    color: white; /* Set link color to white */
+.circle {
+    width: 4cm;
+    height: 4cm;
+    background-color: rgba(255, 255, 0, 0.2);
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transform: scaleX(2);
 }
 
-/* Style for active link or hover effects */
-.header li a:hover {
-    color: #000;
-}
-
-.iframe_style {
-    border: none;
-    overflow: hidden;
-    width: 100%; /* Full width */
-}
-
-.sections{
-    padding-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#about {
-    padding-bottom: 30px;
-}
-
-#projects {
-    padding-bottom: 30px;
-}
-
-#publicatons {
-    padding-bottom: 30px;
-}
-
-#blog {
-    padding-bottom: 30px;
+.circle p {
+    transform: scaleX(0.5);
 }
